@@ -1,0 +1,106 @@
+#banner {
+  background-image: url(../../Media/banner.png);
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#banner .banner-content {
+  padding: 5rem 2rem;
+}
+
+#banner .banner-content span {
+  font-size: .9rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #242429;
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#banner .banner-content h1 {
+  font-size: 3.8rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+#banner .banner-content p {
+  font-size: .9rem;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  color: #242429;
+  padding-right: 1.3rem;
+}
+
+#banner .banner-content button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#649bff), color-stop(#0070fa), to(#649bff));
+  background-image: linear-gradient(to right, #649bff, #0070fa, #649bff);
+  padding: 16px 45px;
+  text-align: center;
+  font-size: .9rem;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #0070fa;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  text-transform: uppercase;
+}
+
+#banner .banner-content button:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#649bff), color-stop(#649bff), to(#0070fa));
+  background-image: linear-gradient(to left, #649bff, #649bff, #0070fa);
+}
+
+#banner .banner-content button a {
+  color: #fff;
+}
+
+#banner img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #banner .banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #banner {
+    background-image: none;
+    text-align: center;
+    background-color: #f7f7f7;
+    height: 95vh;
+  }
+  #banner .heroImg {
+    display: none;
+  }
+  #banner .banner-content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #banner .banner-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+}
+/*# sourceMappingURL=Banner.css.map */

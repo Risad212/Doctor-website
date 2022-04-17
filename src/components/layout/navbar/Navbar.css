@@ -1,0 +1,95 @@
+#navbar {
+  background: none;
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 99;
+}
+
+#navbar button {
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+#navbar .navbar-nav {
+  margin: auto;
+}
+
+#navbar .navbar-nav li {
+  padding: 1rem 1.2rem;
+  font-size: .9rem;
+  font-family: 'Playfair Display', serif;
+}
+
+#navbar .navbar-nav li a {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#navbar .navbar-nav li a:hover {
+  color: #649bff;
+}
+
+#navbar .navbar-nav .dropdown {
+  height: 2.5rem;
+}
+
+#navbar .navbar-nav .dropdown .dropdown-menu {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  display: block;
+  margin-top: -1px;
+  border: 0px solid rgba(0, 0, 0, 0.15) !important;
+  background-color: #fafafa;
+}
+
+#navbar .navbar-nav .dropdown .dropdown-menu li {
+  padding: .5rem 1.2rem;
+}
+
+#navbar .navbar-nav .dropdown .dropdown-menu li a {
+  background: none;
+}
+
+#navbar .navbar-nav .dropdown:hover .dropdown-menu {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+#navbar .button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#649bff), color-stop(#0070fa), to(#649bff));
+  background-image: linear-gradient(to right, #649bff, #0070fa, #649bff);
+  color: #fff;
+  padding: 1rem 2.2rem;
+  font-size: .8rem;
+  border-radius: 5px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+#navbar .button:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#649bff), color-stop(#649bff), to(#0070fa));
+  background-image: linear-gradient(to left, #649bff, #649bff, #0070fa);
+}
+
+@media only screen and (max-width: 992px) {
+  #navbar .navbar-nav {
+    background: #fff;
+    -webkit-box-shadow: 0px 10px 15px #c6c5c5;
+            box-shadow: 0px 10px 15px #c6c5c5;
+  }
+  #navbar .button {
+    display: none;
+  }
+  #navbar .navbar-nav li {
+    padding: 0 2rem;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */
