@@ -1,0 +1,107 @@
+#about{
+    position: relative;
+    z-index: 99;
+    background-image: url(../../Media/about_bg.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 50% 90%;
+    padding-top: 10rem;
+    .row{
+        .col-md-6{
+            h2{
+                font-size: 2.5rem;
+                font-weight: 600;
+                margin-bottom: 24px;
+                position: relative;
+            }
+            p{
+                line-height: 1.929;
+                margin-bottom: 2rem;
+                color: #888888;
+                font-size: 1rem;
+                font-family: "Roboto", sans-serif;
+            }
+            button{
+                padding: 1rem 2.5rem;
+                font-size: .9rem;
+                color: #fff;
+                border-radius: 5px;
+                font-family: "Roboto", sans-serif;
+                transition: all .4s ease-in-out;
+                text-transform: uppercase;
+                background-image: linear-gradient(to right, #649bff, #0070fa, #649bff);
+                border: none;
+                &:hover{
+                    background-image: linear-gradient(to left, #649bff, #649bff,#0070fa);
+                }
+                a{
+                  color: #fff;
+                }
+            }
+            img{
+                max-width: 100%;
+            }
+            .aboutIconlist{
+                padding-top: 5rem;
+                display: flex;
+                .singleItem{
+                    text-align: center;
+                    border-right: 1px solid #ddd;
+                    img{
+                        width: 20%;
+                        padding-bottom: 1rem;
+                    }
+                    h4{
+                        font-size: 18px;
+                        text-transform: capitalize;
+                        color: #242429;
+                    }
+                    &:nth-child(3){
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// responsive 
+@media only screen and (max-width: 1200px) {
+    #about{
+        .row{
+            .col-md-6{
+                h2{
+                    font-size: 28px;
+                    margin-bottom: 20px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    #about{
+        background-image: none;
+        .row{
+            .col-md-6{
+                h2{
+                    font-size: 1.5rem;
+                    margin-bottom: 10px;
+                    line-height: 35px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+// position: fixed;
+//     z-index: 9999 !important;
+//     width: 100%;
+//     background-color: #fff;
+//     box-shadow: 0px 10px 15px rgb(0 0 0 / 5%);
+//     top: 0;
