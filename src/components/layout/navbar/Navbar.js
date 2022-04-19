@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css'
 import Logo from '../../Media/logo.png';
 
 
 
 const Navbar = () => {
+       const [fixedMenu, setFixedMenu] = useState(false)
+   // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+     
+      function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+         setFixedMenu(true)
+      } else {
+         setFixedMenu(false)
+      }
+   }
+
     return (
-        <div id="navbar">
+        <div id='navbar' className={fixedMenu? 'fixed_menu': ''}>
           <div className="container">
            <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
