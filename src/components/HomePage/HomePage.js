@@ -1,6 +1,7 @@
 import React from 'react';
 import About from '../layout/about/About';
 import Banner from '../layout/Banner/Banner';
+import Depertment from '../layout/Depertment/Depertment';
 import Features from '../layout/features/Features';
 import Navbar from '../layout/navbar/Navbar';
 const HomePage = () => {
@@ -10,6 +11,7 @@ const HomePage = () => {
            <Banner />
            <About />
            <Features />
+           <Depertment />
         </div>
     );
 };
