@@ -1,0 +1,100 @@
+#doctors{
+    padding: 9rem 0;
+    h2{
+        font-size: 3rem;
+        color: #242429;
+        line-height: 40px;
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 28px;
+        text-align: center;
+    }
+    p{
+        color: #7f7f7f;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin-bottom: 26px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .row{
+        margin-top: 4rem;
+        .col-lg-3{
+        .single-blog-item{
+            transition: all .5s ease;
+            .single-blog-img{
+                position: relative;
+                 img{
+                     width: 100%;
+                 }
+                .social-icons{
+                    position: absolute;
+                    background-color: rgba(255,255,255,.9);
+                    transition: .5s;
+                    right: -30px;
+                    text-align: center;
+                    padding: 10px 0;
+                    bottom: 30px;
+                    opacity: 0;
+                    visibility: hidden;
+                    li{
+                        a{
+                            text-align: center;
+                            color: #242429;
+                            padding: 10px 20px;
+                            display: inline-block;
+                        }
+                    }
+                 }
+             }
+             .single-blog-text{
+                padding: 37px 0 0;
+                background-color: #fff;
+                h3{
+                    font-size: 1.5rem;
+                    margin-bottom: 19px!important;
+                    font-size: 22px;
+                    font-weight: 700;
+                    a{
+                        color: #242429;
+                    }
+                }
+                p{
+                    text-align: left;
+                    font-size: 1rem;
+                    line-height: .9rem;
+                    color: #888;
+                }
+             }
+             &:hover{
+                 .single-blog-text{
+                     h3{
+                         a{
+                            color: #0070fa;
+                         }
+                     }
+                 }
+                 .single-blog-img{
+                     .social-icons{
+                        visibility: visible;
+                        right: -2px;
+                        opacity: 1;
+                     }
+                 }
+             }
+         }
+      }
+   }
+}
+
+
+
+// Doctors responsive
+@media only screen and (max-width: 992px) {
+    #doctors{
+        h2{
+          font-size: 2rem;
+        }
+    }
+}
+
