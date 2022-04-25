@@ -5,7 +5,7 @@
     background-size: cover;
     position: relative;
     z-index: 1;
-    padding: 4rem 0;
+    padding: 8.5rem 0;
     &::after{
         content: "";
         position: absolute;
@@ -24,7 +24,7 @@
     }
     .row{
         .col-lg-7{
-           input, .nice-select, .date-select{
+           input[type=text],input[type=email],input[type=password], .nice-select, .date-select, textArea{
                 background-color: transparent;
                 color: #fff!important;
                 border: 1px solid #fff;
@@ -40,7 +40,7 @@
                     color: #fff;
                 }
            }
-           .nice-select{
+           .nice-select, .date-select{
                position: relative;
                &::after{
                 border-bottom: 2px solid #999;
@@ -87,29 +87,48 @@
            .show::after{
              transform: rotate(222deg);
            }
-           .date-select{
-              position: relative;
-              &::after{
-                content: '\f09a';
-                display: block;
-                height: 10px;
-                margin-top: -4px;
-                pointer-events: none;
-                position: absolute;
-                right: 15px;
-                top: 41%;
-                transition: all .15s ease-in-out;
-                width: 10px;
-                color: #fff;
-                font-family: 'Font Awesome 6 Free';
+           textArea{
+            height: 150px!important;
+            border: 1px solid #e4e6ea;
+          }
+          .submitBtn{
+              input{
+                padding: 16px 45px;
+                margin-top: 10px;
+                background-image: linear-gradient(to right,#fff,#fff,#fff);
+                font-family: "Playfair Display",serif;
+                font-weight: 500;
+                color: #242429;
+                font-size: .9rem;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                text-transform: uppercase;
+                transform: all .5s ease-in;
+                &:hover{
+                  background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+                }
               }
-           }
+          }
+        }
+        .doctor-img{
+          img{
+             position: absolute;
+             max-width: 100%;
+             bottom: 0px
+          }
         }
     }
 }
 
 
 
-
-  
-
+@media only screen and (max-width: 992px) {
+    #appoinment{
+       .row{
+        .doctor-img{
+          display: none;
+        }
+       }
+    }
+}
