@@ -1,24 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Appoinment.scss';
 
 const Appoinment = () => {
+     const [isOpen, seIstOpen] = useState(true)
+    const handleDropdown = () => {
+       seIstOpen(!isOpen)
+    }
     return (
         <div id="appoinment">
           <div className="container">
              <div className="row">
-                 <div className="col-lg-7">
-                    <h3>Make an Appointment</h3>
-                     <div>
-                         <input type="text" placeholder='Name'/>
-                         <input type="text" placeholder='Email address'/>
+               <div className="col-lg-7">
+                  <h3>Make an Appointment</h3>
+                   <form class="row g-3">
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" id="inputEmail4" placeholder='Email'/>
                      </div>
-                     <textarea name="" id="" cols="30" rows="10"></textarea>
-                     <input type="submit" value="Submit" />
+                      <div class="col-md-6">
+                        <input type="password" class="form-control" id="inputPassword4" placeholder='Password'/>
+                      </div>
+                       <div class="col-md-6">
+                         <div className='nice-select' onClick={handleDropdown}>
+                            <span>Select Service</span>
+                              <ul className="list" style={{opacity: `${isOpen? 1 : 0}`,}}>
+                                  <li>Name Of Service</li>
+                                  <li>Name Of Service</li>
+                                  <li>Name Of Service</li>
+                                  <li>Name Of Service</li>
+                                  <li>Name Of Service</li>
+                              </ul>
+                         </div>
+                      </div>
+                    </form>
                  </div>
-             </div>
+              </div>
           </div>
-        </div>
+      </div>
     );
 };
 
 export default Appoinment;
+
+
+{/* <option selected>Select Service</option>
+                           <option value="2">Name Of Service</option>
+                           <option value="3">Name Of Service</option>
+                           <option value="4">Name Of Service</option>
+                           <option value="5">Name Of Service</option> */}
