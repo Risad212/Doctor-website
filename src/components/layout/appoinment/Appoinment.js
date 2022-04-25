@@ -2,9 +2,13 @@ import React, { useState } from 'react';
 import './Appoinment.scss';
 
 const Appoinment = () => {
-     const [isOpen, seIstOpen] = useState(true)
+     const [isOpen, seIstOpen] = useState(false)
     const handleDropdown = () => {
        seIstOpen(!isOpen)
+    }
+
+    const handleDateToggle = () => {
+     
     }
     return (
         <div id="appoinment">
@@ -20,9 +24,21 @@ const Appoinment = () => {
                         <input type="password" class="form-control" id="inputPassword4" placeholder='Password'/>
                       </div>
                        <div class="col-md-6">
-                         <div className='nice-select' onClick={handleDropdown}>
+                         <div className={`nice-select ${isOpen? 'show': ''}`} onClick={handleDropdown}>
                             <span>Select Service</span>
-                              <ul className="list" style={{opacity: `${isOpen? 1 : 0}`,}}>
+                              <ul className="list" style={{opacity: `${isOpen? 1 : 0}`, transform: `${isOpen?  'scale(1)' : 'scale(0.75)'}`}}>
+                                  <li>Name Of Service</li>
+                                  <li>Name Of Service</li>
+                                  <li>Name Of Service</li>
+                                  <li>Name Of Service</li>
+                                  <li>Name Of Service</li>
+                              </ul>
+                         </div>
+                      </div>
+                      <div class="col-md-6">
+                         <div className="date-select">
+                            <span>Time</span>
+                              <ul className="list" style={{opacity: `${isOpen? 1 : 0}`, transform: `${isOpen?  'scale(1)' : 'scale(0.75)'}`}}>
                                   <li>Name Of Service</li>
                                   <li>Name Of Service</li>
                                   <li>Name Of Service</li>

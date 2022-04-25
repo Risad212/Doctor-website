@@ -24,7 +24,7 @@
     }
     .row{
         .col-lg-7{
-           input, .nice-select{
+           input, .nice-select, .date-select{
                 background-color: transparent;
                 color: #fff!important;
                 border: 1px solid #fff;
@@ -64,28 +64,52 @@
                  pointer-events: none;
                  position: absolute;
                  top: 100%;
-                 margin-top: 45px;
+                 margin-top: 4px;
                  left: 0;
                  transition: all .2s cubic-bezier(.5,0,0,1.25) , opacity .15s ease-out;
                  transform: translateY(-41px);
                  border-radius: 10px;
                  z-index: 9;
+                 opacity: 0;
                  li{
                     color: #000;
                     cursor: pointer;
                     font-weight: 400;
                     line-height: 40px;
-                    font-size: 1rem;
-                    padding: .5rem 1.5rem;
+                    font-size: .9rem;
+                    padding: .2rem 1.5rem;
                     text-align: left;
                     transition: all .2s;
                     font-family: "Roboto",sans-serif;
                  }
                }
            }
+           .show::after{
+             transform: rotate(222deg);
+           }
+           .date-select{
+              position: relative;
+              &::after{
+                content: '\f09a';
+                display: block;
+                height: 10px;
+                margin-top: -4px;
+                pointer-events: none;
+                position: absolute;
+                right: 15px;
+                top: 41%;
+                transition: all .15s ease-in-out;
+                width: 10px;
+                color: #fff;
+                font-family: 'Font Awesome 6 Free';
+              }
+           }
         }
     }
 }
 
 
+
+
+  
 
