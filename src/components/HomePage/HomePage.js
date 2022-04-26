@@ -6,6 +6,7 @@ import Blog from '../layout/Blog/Blog';
 import Depertment from '../layout/Depertment/Depertment';
 import Doctors from '../layout/doctor/Doctors';
 import Features from '../layout/features/Features';
+import Footer from '../layout/Footer/Footer';
 import Navbar from '../layout/navbar/Navbar';
 
 const HomePage = () => {
@@ -19,6 +20,7 @@ const HomePage = () => {
            <Doctors />
            <Appoinment />
            <Blog/>
+           <Footer />
         </div>
     );
 };

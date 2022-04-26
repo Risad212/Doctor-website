@@ -1,0 +1,21 @@
+#footer{
+    padding: 8.5rem 0;
+    background-color: #f3f6f7;
+    .footer-single-weight{
+        .footer-logo{
+            margin-bottom: 1.87rem;
+            display: block;
+        }
+        p{
+            font-family: "Roboto", sans-serif;
+            line-height: 1.929;
+            font-size: 16px;
+            margin-bottom: 0px;
+            color: #7b838a;
+        }
+        ul{
+            display: flex;
+            margin-top: 1.25rem;
+        }
+    }
+}
