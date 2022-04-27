@@ -18,7 +18,7 @@ const Navbar = () => {
    }
 
     return (
-        <div id='navbar' className={fixedMenu? 'fixed_menu': ''}>
+        <div id='navbar' className={fixedMenu? 'fixed_menu animate__animated animate__fadeInDown': ''}>
           <div className="container">
            <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
