@@ -1,0 +1,24 @@
+#copyRight{
+    background-color: #0d1820;
+    padding: 1.62rem 0px;
+    p{
+        color: #888888;
+        a:hover{
+            color: #0065e1;
+        }
+        i{
+            font-weight: 400;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        li{
+            margin-left: 1.25rem;
+            a{
+                color: #fff;
+                display: block;
+            }
+        }
+    }
+}

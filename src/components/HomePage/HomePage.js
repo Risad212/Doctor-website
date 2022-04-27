@@ -3,6 +3,7 @@ import About from '../layout/about/About';
 import Appoinment from '../layout/appoinment/Appoinment';
 import Banner from '../layout/Banner/Banner';
 import Blog from '../layout/Blog/Blog';
+import CopyRight from '../layout/copyRight/CopyRight';
 import Depertment from '../layout/Depertment/Depertment';
 import Doctors from '../layout/doctor/Doctors';
 import Features from '../layout/features/Features';
@@ -21,6 +22,7 @@ const HomePage = () => {
            <Appoinment />
            <Blog/>
            <Footer />
+           <CopyRight />
         </div>
     );
 };
