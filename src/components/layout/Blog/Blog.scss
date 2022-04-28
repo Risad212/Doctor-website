@@ -24,13 +24,22 @@
             }
             ul{
                 margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
                 li{
-                    margin-right: 2.5rem;
                     font-size: 1rem;
                     color: #8a8a8a;
                     text-transform: uppercase;
                 }
             }
         }
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    #blog .row .single-blog ul li{
+        font-size: .8rem;
     }
 }

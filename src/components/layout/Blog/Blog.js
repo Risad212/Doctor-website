@@ -33,7 +33,7 @@ const Blog = () => {
                     {blogContent.map(elem => {
                       return (
                           <>
-                           <div className="col-md-4 col-sm-12 mb-5">
+                           <div className="col-xl-4 col-md-6 col-sm-12 mb-5">
                              <div className="single-blog">
                                <div class="card">
                                  <img class="card-img-top" src={elem.img} alt="Blog" />

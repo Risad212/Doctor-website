@@ -8,6 +8,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    padding: 25rem 0;
     .banner-content{
         padding: 5rem 2rem;
         span{
@@ -77,6 +78,7 @@
         text-align: center;
         background-color: #f7f7f7;
         height: 95vh;
+        padding: 0;
         .heroImg{
             display: none;
         }
