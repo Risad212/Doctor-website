@@ -17,6 +17,12 @@ const Blog = () => {
             doctorName: 'Jhone Mike',
             doctorPosition: 'CLINIC, DOCTORS',
           },
+          {
+            img: BlogTowImg,
+            title: 'First cattle which earth unto let health for can get and see what you',
+            doctorName: 'Jhone Mike',
+            doctorPosition: 'CLINIC, DOCTORS',
+          },
     ]
     return (
         <div id="blog">
@@ -27,7 +33,7 @@ const Blog = () => {
                     {blogContent.map(elem => {
                       return (
                           <>
-                           <div className="col-md-6 col-sm-12 mb-5">
+                           <div className="col-md-4 col-sm-12 mb-5">
                              <div className="single-blog">
                                <div class="card">
                                  <img class="card-img-top" src={elem.img} alt="Blog" />

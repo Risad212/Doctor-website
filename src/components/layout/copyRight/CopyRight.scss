@@ -18,6 +18,10 @@
             a{
                 color: #fff;
                 display: block;
+                transition: all .3s ease-in;
+                &:hover{
+                    color: #0065e1;
+                }
             }
         }
     }
